@@ -1,5 +1,5 @@
-# BookStore
-The Bookstore is a website that enable users to:
+# Bookstore
+The bookstore is a website that enable users to:
 * Display a list of books.
 * Add a book.
 * Remove a selected book.
@@ -21,13 +21,13 @@ By building this application, I will learn how to use React and Redux.
 * Clone the repo using the command below
 
 ```
-git clone git@github.com:charlesgobina/bookstore.git
+git clone git@github.com:charlesgobina/api-bookstore.git
 ```
 
 * Navigate to the directory in which you cloned the project and use the command below
 
 ```
-cd bookstore
+cd api-bookstore
 ```
 
 * Install all project dependencies and packages using the command below
@@ -53,18 +53,18 @@ Contributions, issues, and feature requests are welcome!
 * Fork this repo using the command below
 
 ```
-gh repo fork git@github.com:charlesgobina/bookstore.git
+gh repo fork git@github.com:charlesgobina/api-bookstore.git
 ```
 * Clone the forked repo using the command below
 
 ```
-git clone git@github.com:charlesgobina/bookstore.git
+git clone git@github.com:charlesgobina/api-bookstore.git
 ```
 
 * Navigate to the directory in which you cloned the project and use the command below
 
 ```
-cd bookstore
+cd api-bookstore
 ```
 
 * Switch to dev branch using the command below
@@ -82,7 +82,7 @@ git checkout -b [name_of_feature_branch]
 * Commit your changes using git commit as shown below
 
 ```
-git commit -m ["entere a commit message"]
+git commit -m ["enter a commit message"]
 ```
 
 * Push your changes using
