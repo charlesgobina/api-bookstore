@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Remove from './button';
 
 const Books = (props) => {
-  const { data: { title, category } } = props;
+  const { data: { id, title, author } } = props;
 
   return (
     <div className="book-list">
@@ -11,8 +11,8 @@ const Books = (props) => {
         <li>
           <span className="title">{ title }</span>
           <span> - </span>
-          <span className="title">{ category }</span>
-          <Remove />
+          <span className="title">{ author }</span>
+          <Remove id={id} />
         </li>
       </ul>
     </div>
@@ -21,8 +21,9 @@ const Books = (props) => {
 
 Books.propTypes = {
   data: PropTypes.shape({
+    id: PropTypes.string,
     title: PropTypes.string,
-    category: PropTypes.string,
+    author: PropTypes.string,
   }).isRequired,
 };
 
