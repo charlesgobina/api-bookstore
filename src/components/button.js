@@ -10,7 +10,7 @@ const Remove = (props) => {
     dispatch(bookRemove(id));
   };
   return (
-    <button type="button" onClick={removeFromStore}>Remove</button>
+    <button className="bk-action" type="button" onClick={removeFromStore}>Remove</button>
   );
 };
 

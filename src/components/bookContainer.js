@@ -13,7 +13,7 @@ const BookContainer = () => {
 
   return (
     <>
-      { books.length === 0 ? <p>No books</p>
+      { books.length === 0 ? <p className="no-books">No books . . . .</p>
         : books.map((book) => <Books data={book} key={book.id} />)}
       <AddBook />
     </>
