@@ -28,29 +28,35 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <h2>Add a book</h2>
-      <form>
+    <div className="add-wrapper">
+      <h2 className="add-title">Add new book</h2>
+      <form className="add-form d-flex">
         <input
-          value={title}
+          required
           type="text"
+          className="input-title"
+          placeholder="Add title"
+          value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Add a Book"
         />
         <input
-          value={category}
+          required
+          className="input-category"
           type="text"
+          placeholder="Add category"
+          value={category}
           onChange={(e) => setCategory(e.target.value)}
-          placeholder="Add a Category"
         />
         <button
-          onClick={(e) => setToStore(e)}
           type="submit"
+          className="input-button"
+          onClick={(e) => setToStore(e)}
         >
           Add
         </button>
       </form>
-      { emptyFields ? <small>Please fill in all required fields</small> : '' }
+      { emptyFields ? <small>Please fill in all fields</small>
+        : '' }
     </div>
   );
 };
